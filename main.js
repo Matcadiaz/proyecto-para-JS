@@ -54,14 +54,14 @@ const tempExtrema = function (temp){
 
 let mostrarTempExt =  parseInt(prompt(`Ingrese una temperatura!`));
     
-if (mostrarTempExt === NaN){
 
-    alert(`Por favor, ingresa algún número por favor`);
-} else {
+while(isNaN(mostrarTempExt)){
     
-    alert(`la temperatura es ${tempExtrema(mostrarTempExt)}`);
-} 
+    alert(`Por favor, ingresa algún número por favor`);
+    mostrarTempExt =  parseInt(prompt(`Ingrese una temperatura!`));    
+}
 
+alert(`la temperatura es ${tempExtrema(mostrarTempExt)}`);
 
 
 
